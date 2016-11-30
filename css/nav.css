@@ -12,10 +12,11 @@ header {
   padding: 0;
   background-color: #2196F3;
   position: absolute;
+  border-bottom: solid #324376 4px;
 }
 
 .buffer {
-  height: 70px;
+  height: 74px;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -259,5 +260,11 @@ nav a {
   }
   .bottom-section {
     height: 85px;
+  }
+}
+@media (max-width: 440px) {
+  .right-div button {
+    right: 8px;
+    width: 70px;
   }
 }
