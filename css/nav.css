@@ -4,159 +4,247 @@ body, html {
   font-family: 'Open Sans', sans-serif;
 }
 
-nav {
+header {
+  height: 70px;
   width: 100%;
-  height: 95px;
-  border-bottom: solid rgba(128, 128, 128, .8) 3px;
+  margin: 0;
+  padding: 0;
+  background-color: #2196F3;
 }
 
-nav img {
-  height: 80px;
-  margin: 10px 0px 5px 20px;
+.logo-div {
+  background-color: white;
+  border: solid #324376 4px;
+  border-top: none;
+  float: left;
+  padding: 15px 12px 15px 12px;
+  margin-left: 40px;
+}
+
+.logo-div img {
+  height: 100px;
   width: auto;
   float: left;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  float: left;
+  margin-top: 22px;
 }
 
 nav ul {
-  float: left;
   margin: 0;
-  margin-top: 32px;
+  float: left;
+  letter-spacing: 1px;
+  margin-left: -10px;
 }
 
 nav li {
-  display: inline;
   margin: 0;
-  font-size: 95%;
-  padding: 0px 10px 39px 10px;
-  margin-right: 10px;
+  display: inline;
+  font-size: 105%;
+  color: white;
+  text-transform: uppercase;
   font-weight: bold;
-  color: #324376;
-}
-
-nav .active {
-  border-bottom: solid #324376 6px;
+  margin-right: 12px;
 }
 
 nav a {
   text-decoration: none;
 }
 
-nav #textbox {
-  float: left;
-  background-color: white;
-  font-size: 90%;
-  padding: 8px;
-  background-image: url("https://eckels.github.io/DIYmatic/img/search2.png");
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: 6px 6px;
-  padding-left: 35px;
-  border: solid #808080 1px;
-  border-radius: 4px;
-  outline: none;
-  margin-top: 25px;
-  margin-left: 30px;
-
-}
-
-::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
-   color: white;
-}
-
-nav .login-div {
+.right-div {
+  margin-top: 18px;
+  margin-right: 20px;
   float: right;
-  margin-top: 25px;
-  margin-right: 15px;
 }
 
-nav button {
-  border-radius: 4px;
-  padding: 8px;
-  color: white;
-  cursor: pointer;
-  border: none;
-  font-size: 90%;
+.search-box {
+  float: left;
+}
+
+.search-box img {
+  float: left;
+  height: 26px;
+  width: auto;
   background-color: #324376;
+  border-radius: 4px 0 0 4px;
+  border: solid #324376 1px;
+  border-right: none;
+  padding: 2px;
 }
 
-@media (max-width: 923px) {
-  nav {
+#textbox {
+  float: left;
+  font-size: 105%;
+  margin-right: 15px;
+  padding: 5px;
+  outline: none;
+  border-radius: 0 4px 4px 0;
+  border: solid #757575 1px;
+  border-left: none;
+}
+
+.right-div button {
+  font-size: 95%;
+  color: white;
+  float: left;
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.right-div button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1016px) {
+  .logo-div {
+    margin-left: 30px;
+  }
+  .logo-div img {
     height: 85px;
   }
-  nav img {
-    height: 70px;
+  nav {
+    margin-top: 24px;
   }
   nav ul {
-    margin-top: 25px;
+    margin-left: -15px;
   }
   nav li {
-    padding: 0px 8px 36px 8px;
-    margin-right: 5px;
+    font-size: 95%;
   }
-  nav #textbox, nav .login-div {
+  .search-box img {
+    height: 23px;
+  }
+  .right-div {
+    margin-top: 20px;
+  }
+  #textbox {
+    font-size: 95%;
+  }
+  .right-div button {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 922px) {
+  .logo-div {
     margin-left: 20px;
-    margin-top: 18px;
+  }
+  .logo-div img {
+    height: 75px;
+  }
+  nav {
+    margin-top: 26px;
+  }
+  nav ul {
+    margin-left: -18px;
+  }
+  .search-box img {
+    height: 23px;
+  }
+  .right-div {
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+  #textbox {
+    font-size: 95%;
+  }
+  .right-div button {
+    font-size: 95%;
   }
 }
 
-@media (max-width: 850px) {
-  nav {
-    height: 120px;
-    border-bottom: none;
+@media (max-width: 886px) {
+  header {
+    background-color: none;
+    height: auto;
   }
-  .header-nav {
-    float: left;
-  }
-  nav img {
+  .logo-div {
     float: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+  .logo-div img {
+    float: none;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  nav {
+    float: left;
+    margin-top: 0;
   }
   nav ul {
-    position: absolute;
-    z-index: 2;
-    top: 85px;
-    margin-top: 3px;
-    left: -20px;
+  margin-top: 10px;
   }
-  nav li {
-    padding: 0px 8px 8px 8px;
-    color: white;
+  .right-div {
+    margin-top: 8px;
   }
-  nav .active {
-    border-bottom: solid #324376 3px;
-  }
-  .color-div {
-    background-color: #2196F3;
-    position: absolute;
+  .bottom-section {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    top: 85px;
-    height: 35px;
-    z-index: 1;
+    background-color: #2196F3;
+    height: 46px;
   }
 }
-@media (max-width: 572px) {
+
+@media (max-width: 670px) {
+  header {
+    background-color: white;
+  }
+  .logo-div {
+    margin-left: 50vw;
+  }
+  .logo-div img {
+    width: 160px;
+    height: auto;
+    margin-left: -80px;
+  }
+  #textbox {
+    margin-right: 0;
+  }
+  .right-div button {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #324376;
+  }
+}
+
+@media (max-width: 550px) {
   nav {
-    height: 170px;
-  }
-  nav img {
-    padding-left: 50vw;
-    margin-left: -81.6px;
-  }
-  .color-div {
-    height: 85px;
+    float: none;
+    padding-top: 3px;
   }
   nav ul {
-    top: 135px;
-    left: 50vw;
-    margin-left: -156px;
+    float: none;
+    justify-content: center;
+    display: flex;
   }
-  nav #textbox {
-    position: absolute;
-    top: 85px;
-    z-index: 3;
-    margin: 8px 0 0 -108px;
-    width: 170px;
-    left: 50vw;
+  .right-div {
+    float: none;
+    text-align: center;
+    margin-left: 50vw;
+  }
+  .search-box {
+    float: none;
+    text-align: center;
+    margin-left: -118px;
+  }
+  #textbox, .search-box img {
+    margin-top: 4px;
+  }
+  #textbox {
+    width: 200px;
+  }
+  .bottom-section {
+    height: 85px;
   }
 }

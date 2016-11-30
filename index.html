@@ -12,23 +12,28 @@
   </head>
 
 <body>
-  <nav>
-    <div class="header-nav">
-    <a href="/"><img src="img/logo.png" alt="DIYmatic"></a>
-      <ul>
-        <a href="about.html"><li>About Us</li></a>
-        <a href="explore.html"><li>Explore</li></a>
-        <a href="create.html"><li>Create</li></a>
-      </ul>
-    </div>
-    <div class="color-div"></div>
-          <input id="textbox" type="text" placeholder="Search" onkeydown="if (event.keyCode == 13 || event.which == 13) { location='http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('textbox').value);}" />
-        <div class="login-div">
-          <button onclick="displayLogin()">Login / Sign Up</button>
-        </div>
-  </nav>
   <header>
-    <!-- insert the typing thing here -->
+      <div class="logo-div">
+        <a href="/"><img src="img/logo.png" alt="DIYmatic"></a>
+      </div>
+    <div class="bottom-section">
+      <nav>
+        <ul>
+          <a href="about.html"><li>About Us</li></a>
+          <a href="explore.html"><li>Explore</li></a>
+          <a href="create.html"><li>Create</li></a>
+        </ul>
+      </nav>
+          <div class="right-div">
+            <div class="search-box">
+              <img src="img/search.png" alt="Search">
+              <input id="textbox" type="text" placeholder="Search" onkeydown="if (event.keyCode == 13 || event.which == 13) { location='http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('textbox').value);}" />
+            </div>
+            <button onclick="displayLogin()">Login / Sign Up</button>
+          </div>
+    </div>
   </header>
+  <div class="intro-screen">
+  </div>
 </body>
 </html>
