@@ -78,3 +78,31 @@
 .guide a {
   text-decoration: none;
 }
+
+@media (max-width: 430px) {
+.guide-div {
+  padding: 20px 0 20px 0;
+}
+.guide {
+  margin: 15px;
+}
+}
+
+@media (max-width: 342px) {
+.guide {
+  width: 260px;
+}
+.guide-bottom h3 {
+font-size: 100%;
+}
+.guide-bottom h6 {
+  font-size: 85%;
+}
+.guide img {
+  width: 260px;
+  height: 165px;
+}
+.guide-img-div {
+  height: 165px;
+}
+}
