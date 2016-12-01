@@ -3,7 +3,6 @@ body, html {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  background-color: #F6F6F6;
 }
 
 .clearfix:after {
@@ -11,6 +10,26 @@ body, html {
   display: block;
   height: 0;
   clear: both;
+}
+
+.generic-header {
+  padding: 30px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  border-bottom: solid #324376 5px;
+  color: white;
+}
+
+.generic-header h1 {
+  font-size: 250%;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px black;
+}
+
+.generic-header h4 {
+  font-size: 120%;
+  text-shadow: 0 0 15px black;
 }
 
 header {
@@ -138,9 +157,6 @@ nav a {
   nav li {
     font-size: 95%;
   }
-  .search-box img {
-    height: 19px;
-  }
   .right-div {
     margin-top: 20px;
   }
@@ -164,9 +180,6 @@ nav a {
   }
   nav ul {
     margin-left: -18px;
-  }
-  .search-box img {
-    height: 19px;
   }
   .right-div {
     margin-top: 20px;
@@ -365,9 +378,6 @@ footer ul {
   footer ul {
     padding: 30px;
   }
-  .footer-list-3 {
-    float: none;
-  }
   .footer-center {
     justify-content: none;
     display: block;
@@ -378,6 +388,7 @@ footer ul {
   }
   .footer-list-3 {
     text-align: center;
+    float: none;
     padding-top: 0;
     padding-bottom: 40px;
   }
