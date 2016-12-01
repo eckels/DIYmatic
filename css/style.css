@@ -328,6 +328,7 @@ footer ul {
   margin-left: -5px;
   outline: none;
   border-radius: 0 2px 2px 0;
+  cursor: pointer;
 }
 
 .footer-bottom {
@@ -375,11 +376,12 @@ footer ul {
     padding-bottom: 40px;
   }
   .footer-list-3 p {
-    text-align: left;
+    text-align: center;
     margin-left: 20px;
   }
   #emailSub {
     width: 50%;
+    margin-left: 0;
   }
 }
 @media (max-width: 420px) {
@@ -438,7 +440,7 @@ footer ul {
   text-transform: uppercase;
   outline: none;
   border-bottom: solid #324376 4px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 #loginTab {
@@ -477,14 +479,14 @@ footer ul {
 }
 
 .login-body input[type="email"], .login-body input[type="password"] {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   border: solid #757575 1px;
   width: 60%;
   padding: 8px;
   outline: none;
   font-size: 100%;
   border-radius: 2px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 #register-form {
@@ -495,7 +497,26 @@ footer ul {
   position: absolute;
   top: 10px;
   right: 10px;
-  height: 24px;
+  height: 20px;
   width: auto;
   cursor: pointer;
+  opacity: .6;
+  transition: opacity .3s;
+}
+
+#x:hover {
+  opacity: 1;
+}
+
+@media (max-width: 675px) {
+  .login-div {
+    width: 86%;
+    margin-left: -43%;
+  }
+}
+@media (max-width: 540px) {
+  #loginTab, #registerTab {
+    font-size: 100%;
+    padding: 15px 0 15px 0;
+  }
 }
