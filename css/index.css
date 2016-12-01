@@ -6,13 +6,14 @@
   background-position: center;
   background-size: cover;
   padding-top: 10em;
+  border-bottom: solid #324376 5px;
 }
 
 @media (max-width: 886px) {
-.intro-screen {
-  height: 35vh;
-  padding-top: 9em;
-}
+  .intro-screen {
+    height: 35vh;
+    padding-top: 9em;
+  }
 }
 
 @media (max-width: 520px) {
