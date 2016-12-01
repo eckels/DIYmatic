@@ -537,3 +537,71 @@ footer ul {
     padding: 15px 0 15px 0;
   }
 }
+
+.general {
+  padding: 40px;
+}
+
+@media (max-width: 550px) {
+  .general {
+    padding: 20px;
+  }
+}
+
+.general h1 {
+  color: #324376;
+  font-size: 220%;
+}
+
+.general h2 {
+  color: #324376;
+  font-size: 180%;
+}
+
+.general h3 {
+  color: #324376;
+  font-size: 150%;
+}
+
+.general h4 {
+  color: black;
+  font-size: 120%;
+}
+
+.general p {
+  color: #757575;
+}
+
+.general .italic {
+  font-style: italic;
+}
+
+.general .bold {
+  font-weight: bold;
+}
+
+.general .large-img {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.general .med-img {
+  width: 60%;
+  height: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.general .small-img {
+  height: auto;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.general a {
+  color: #2196F3;
+  text-decoration: none;
+}
