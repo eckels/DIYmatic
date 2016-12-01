@@ -3,6 +3,7 @@ body, html {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  background-color: #F6F6F6;
 }
 
 .clearfix:after {
@@ -61,10 +62,15 @@ nav li {
   margin: 0;
   display: inline;
   font-size: 105%;
-  color: white;
+  color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   font-weight: bold;
   margin-right: 15px;
+  transition: color .2s;
+}
+
+nav li:hover {
+  color: rgba(255, 255, 255, .6);
 }
 
 nav a {
