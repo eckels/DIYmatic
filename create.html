@@ -26,6 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>DIYmatic - Create Guide</title>
+    <script src="js/jquery-2.1.1.js"></script>
     <script src="js/login.js"></script>
     <script src="js/create.js"></script>
   </head>
@@ -101,7 +102,7 @@
 
         <h4>Materials List</h4>
           <input type="text" class="text-small" id="material1"><br>
-          <button onclick="addMaterial()">Add Another Material</button>
+          <button onclick="addMaterial()" id="materialbutton">Add Another Material</button>
 
         <h3>Steps</h3>
           <h5>Step Instructions</h5>
@@ -143,7 +144,5 @@
       </div>
     </div>
   </footer>
-
-  <script src="js/jquery-2.1.1.js"></script>
 </body>
 </html>
