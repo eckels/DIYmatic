@@ -21,6 +21,8 @@ function closeLogin() {
   document.getElementById('login-screen').style.display = "none";
 }
 
+$(document).ready(function() {
+    console.log('ready');
   $('#filter').change(function() {
       var choice = $(this).val();
     filterItems();
@@ -42,3 +44,4 @@ function closeLogin() {
       filterItems();
     }
   });
+});
