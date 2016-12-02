@@ -1,0 +1,119 @@
+.create-div {
+  padding: 35px;
+}
+
+body {
+  background-color: #F6F6F6 !important;
+}
+
+.create-div h1 {
+  text-align: center;
+  margin: 0;
+  color: #324376;
+  margin-bottom: 25px;
+}
+
+.create-form {
+  background-color: white;
+  border: double #324376 5px;
+  padding: 15px;
+}
+
+.create-form input, .create-form select {
+  outline: none;
+  margin-left: 30px;
+  padding: 6px;
+  border-radius: 4px;
+  border: solid #757575 1px;
+  font-size: 100%;
+}
+
+.create-form input {
+  width: 30%;
+}
+
+.create-form h3 {
+  color: #324376;
+  font-size: 180%;
+  margin: 10px;
+}
+
+.create-form h4 {
+  color: #324376;
+  font-size: 120%;
+  margin: 10px;
+  margin-top: 25px;
+}
+
+.create-form button {
+  margin-left: 30px;
+  margin-top: 10px;
+  font-size: 100%;
+  border-radius: 4px;
+  border: solid #324376 3px;
+  background-color: white;
+  font-weight: bold;
+  padding: 5px 8px 5px 8px;
+  color: #324376;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.create-form h5 {
+  font-size: 100%;
+  margin: 0;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.text-step {
+  width: 80%;
+  margin-left: 30px;
+  outline: none;
+  border-radius: 4px;
+  resize: none;
+  padding: 6px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.file-step {
+  margin-bottom: 50px;
+}
+
+.toolbar {
+  margin-top: 0;
+  margin-bottom: 30px;
+  border: solid #324376 3px;
+  border-radius: 4px;
+  width: 200px;
+  padding: 4px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.toolbar h5 {
+  color: #324376;
+  float: left;
+  font-size: 180%;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.toolbar img {
+  height: 30px;
+  width: auto;
+  float: left;
+  margin-top: 5px;
+}
+
+.submit {
+  width: 100%;
+  margin-left: 0 !important;
+  font-size: 120% !important;
+  background-color: #FFA500 !important;
+  border: none !important;
+  padding: 15px !important;
+  color: white !important;
+  margin-bottom: 0px !important;
+}
