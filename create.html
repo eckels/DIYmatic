@@ -26,9 +26,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>DIYmatic - Create Guide</title>
-    <script src="js/jquery-2.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
-    <script src="js/create.js"></script>
   </head>
 
 <body>
@@ -45,14 +44,14 @@
               <input type="email" id="loginEmail">
             <p>Password</p>
               <input type="password" id="loginPassword">
-            <button onclick="">Login</button>
+            <button onclick="closeLogin()">Login</button>
           </div>
           <div id="register-form">
             <p>Email</p>
               <input type="email" id="registerEmail">
             <p>Create Password</p>
               <input type="password" id="registerPassword">
-            <button onclick="">Sign Up</button>
+            <button onclick="closeLogin()">Sign Up</button>
           </div>
         </div>
     </div>
@@ -83,7 +82,7 @@
 
   <div class="create-div">
     <h1>Create Guide</h1>
-      <form class="create-form">
+      <div class="create-form">
 
         <h3>Guide Title</h3>
           <input type="text" id="guideTitle" class="text-big">
@@ -102,7 +101,7 @@
 
         <h4>Materials List</h4>
           <input type="text" class="text-small" id="material1"><br>
-          <button onclick="addMaterial()" id="materialbutton">Add Another Material</button>
+          <button id="materialbutton">Add Another Material</button>
 
         <h3>Steps</h3>
           <h5>Step Instructions</h5>
@@ -110,12 +109,12 @@
           <h5>Step Picture</h5>
             <input type="file" class="file-step" id="pictext1">
 
-        <div class="toolbar clearfix" onclick="addStep()">
+        <div class="toolbar clearfix" id="addStep">
           <h5>Add Step</h5>
             <img src="img/plus.png" alt="Add">
         </div>
       <button class="submit" onclick="submitGuide()">Submit Guide</button>
-      </form>
+      </div>
 
 
   </div>

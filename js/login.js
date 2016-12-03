@@ -20,7 +20,8 @@ function displayLogin() {
 function closeLogin() {
   document.getElementById('login-screen').style.display = "none";
 }
-
+var matCounter = 2;
+var stepCounter = 2;
 $(document).ready(function() {
     console.log('ready');
   $('#filter').change(function() {
@@ -43,5 +44,15 @@ $(document).ready(function() {
       choice = "guide";
       filterItems();
     }
+  });
+
+  $('#materialbutton').click(function() {
+      $('#materialbutton').before('<input type="text" class="text-small" id="material' + matCounter + '"><br>');
+      matCounter++;
+  });
+
+  $('#addStep').click(function() {
+    $('#addStep').before('<h5>Step Instructions</h5><textarea class="text-step" id="steptext' + stepCounter + '"></textarea><h5>Step Picture</h5><input type="file" class="file-step" id="pictext1">');
+    stepCounter++;
   });
 });
