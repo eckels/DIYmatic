@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/intro.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#324376">
+    <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#324376">
+    <meta name="description" content="The ultimate site for all your DIY project needs, share or browse countless Do It Yourself projects" />
+    <meta name="keywords" content="DIY, Create, Explore, Projects, Help" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>DIYmatic - Help</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+  </head>
+
+<body>
+
+  <div id="login-screen">
+    <div class="login-div"><img id="x" onclick="closeLogin()" src="img/letter.png" alt="Close Window">
+      <div class="clearfix">
+        <button id="loginTab" class="active-tab" onclick="switchTabs(1)">Login</button>
+        <button id="registerTab" onclick="switchTabs(2)">Sign Up</button>
+      </div>
+        <div class="login-body">
+          <div id="login-form">
+            <p>Email</p>
+              <input type="email" id="loginEmail">
+            <p>Password</p>
+              <input type="password" id="loginPassword">
+            <button onclick="">Login</button>
+          </div>
+          <div id="register-form">
+            <p>Email</p>
+              <input type="email" id="registerEmail">
+            <p>Create Password</p>
+              <input type="password" id="registerPassword">
+            <button onclick="">Sign Up</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <header>
+      <div class="logo-div">
+        <a href="index.html"><img src="img/logo.png" alt="DIYmatic"></a>
+      </div>
+    <div class="bottom-section">
+      <nav>
+        <ul>
+          <a href="about.html"><li>About</li></a>
+          <a href="explore.html"><li>Explore</li></a>
+          <a href="create.html"><li>Create</li></a>
+        </ul>
+      </nav>
+          <div class="right-div">
+            <div class="search-box">
+              <img src="img/search.png" alt="Search">
+              <input id="textbox" type="text" placeholder="Search" onkeydown="if (event.keyCode == 13 || event.which == 13) { location='http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('textbox').value);}" />
+            </div>
+            <button onclick="displayLogin()">Login / Sign Up</button>
+          </div>
+    </div>
+  </header>
+  <div class="buffer"></div>
+
+  <style>
+    .generic-header {
+      background-image: url("https://eckels.github.io/DIYmatic/img/help.jpg");
+    }
+  </style>
+  <div class="generic-header">
+    <h1>Help</h1>
+      <h4>Having Trouble? You're in the right place</h4>
+  </div>
+
+  <div class="general">
+    <h3>Got a question? Visit our <a href="faq.html">Frequently Asked Questions</a> Page to see if others had the same problem as you.</h3>
+
+    <h3>Questions not in the FAQ section may be submitted to <a href="mailto:evan.eckels@yahoo.com">evan.eckels@yahoo.com</a> and we will get back to you ASAP!</h3>
+
+    <h3>If you are having trouble navigating the site, visit our <a href="sitemap.html">site map</a> for help seeing all the pages on our site!</h3>
+
+    <p></p>
+  </div>
+
+  <footer>
+    <div class="clearfix"><div class="footer-center"><div class="footer-center-2">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="create.html">Create</a></li>
+        <li><a onclick="displayLogin()">Login/Register</a></li>
+      </ul>
+      <ul>
+        <li><a href="acknowledgements.html">Acknowledgements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ's</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul></div>
+      <form class="footer-list-3">
+        <p>Join Our Newsletter</p>
+          <nobr><input type="email" id="emailSub">
+            <input type="submit" value="Submit" id="submitEmail"></nobr>
+      </form></div>
+      <div class="footer-bottom">
+        <p>Copyright (c) 2016 DIYmatic All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
