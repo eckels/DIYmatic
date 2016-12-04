@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#324376">
+    <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#324376">
+    <meta name="description" content="The ultimate site for all your DIY project needs, share or browse countless Do It Yourself projects" />
+    <meta name="keywords" content="DIY, Create, Explore, Projects" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>DIYmatic - Smart Monitor Stand</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-88410215-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+<body>
+
+  <div id="login-screen">
+    <div class="login-div"><img id="x" onclick="closeLogin()" src="img/letter.png" alt="Close Window">
+      <div class="clearfix">
+        <button id="loginTab" class="active-tab" onclick="switchTabs(1)">Login</button>
+        <button id="registerTab" onclick="switchTabs(2)">Sign Up</button>
+      </div>
+        <div class="login-body">
+          <div id="login-form">
+            <p>Email</p>
+              <input type="email" id="loginEmail">
+            <p>Password</p>
+              <input type="password" id="loginPassword">
+            <button onclick="">Login</button>
+          </div>
+          <div id="register-form">
+            <p>Email</p>
+              <input type="email" id="registerEmail">
+            <p>Create Password</p>
+              <input type="password" id="registerPassword">
+            <button onclick="">Sign Up</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <header>
+      <div class="logo-div">
+        <a href="index.html"><img src="img/logo.png" alt="DIYmatic"></a>
+      </div>
+    <div class="bottom-section">
+      <nav>
+        <ul>
+          <a href="about.html"><li>About</li></a>
+          <a href="explore.html"><li>Explore</li></a>
+          <a href="create.html"><li>Create</li></a>
+        </ul>
+      </nav>
+          <div class="right-div">
+            <div class="search-box">
+              <img src="img/search.png" alt="Search">
+              <input id="textbox" type="text" placeholder="Search" onkeydown="if (event.keyCode == 13 || event.which == 13) { location='http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('textbox').value);}" />
+            </div>
+            <button onclick="displayLogin()">Login / Sign Up</button>
+          </div>
+    </div>
+  </header>
+  <div class="buffer"></div>
+
+  <style>
+    .general h1, h4 {
+      text-align: center;
+    }
+    .general ul {
+      line-height: 180%;
+    }
+    .general li a {
+      font-size: 100%;
+      cursor: pointer;
+    }
+  iframe {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30px;
+  }
+  </style>
+
+  <div class="general">
+    <h1>Smart Monitor Stand<h1>
+      <h4>By: Bhargav Yadavalli</h4>
+        <img src="img/guides/guide5/main.jpg" alt="" class="large-img">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w_035zR05Rg" frameborder="0" allowfullscreen></iframe>
+    <h3>Materials Needed:</h3>
+      <ul class="materials">
+        <li>One <a>wooden board</a> that is wide enough to cover your Keyboard</li>
+        <li>One <a>USB 3 Hub</a>, that is small enough to be integrated into the board</li>
+        <li>One <a>USB 3 extension cable</a> to connect your Smart Monitor Stand with your PC</li>
+        <li>A <a>thin aluminium plate</a> and a few small screws to cover your USB Hub afterwards.</li>
+        <li>A <a>jig saw</a> for rough cuts</li>
+        <li>A <a>small saw</a> for precise wood working</li>
+        <li>A <a>chisel</a> to carve out inner sections of your board</li>
+        <li>A <a>common cordless Screwdriver</a></li>
+      </ul>
+
+    <div class="step">
+      <h4>Step 1</h4>
+        <p>Saw your Board down to the required length and width. The dimensions of your Keyboard indicate the required total length. Make sure, that you leave some space for your fingerson both sides, to be able to pull out your keyboard. And decicde the total hight of your laptopstand. I recommend to create it as flat as your Keyboard allows it, but keep in mind, that you will need a 2-3 mm more for the aluminum plate screwed on the bottom.</p>
+          <img src="img/guides/guide5/main1.jpg" alt="step1" class="large-img">
+    </div>
+
+    <div class="step">
+      <h4>Step 2</h4>
+        <p>Now lay your USB 3 Hub on the required position and mark the outer shape.<br>You will now have to carve out the space for the USB Hub. You will have to work with a chisel, which requires a some skills (otherwise check out Step 10 "Alternatives and Upgrades")<br>First create a 1-2 mm deep vertical cut with the Chisel all around the edges and then start to pound out one 1-2 mm thick pieces of wood. Allways make sure, that your horizontal cut is just as deep as your vertical cut was before, to get a smooth result.<br>Carving out Wood with a chisel is much easier than you would expect it to be. If you have absolutely no experience, practice a little bit with some remaining rest wood.<br>Make sure your USB Hub fits perfectly into your board and create a line for the Hubs cable, by drilling a horizontal hole into your board and sawing out the top Layer of wood.</p>
+          <img src="img/guides/guide5/main2.jpg" alt="step 2" class="large-img">
+    </div>
+
+    <div class="step">
+      <h4>Step 3</h4>
+        <p>It's kinda hard to get your USB Hub perfectly integrated into your board, while at the same time being able to exchange it, if it is broken.<br>One thing, I want you to keep in mind: These USB Hubs are electronical devices, which means they will break with time. So maybe in a year or two it will break and all your effort in making this a "smart" Monitor stand is wasted.<br>So smooth out the edges on both board parts to be able to slide the Hub in and out.<br>I will cost some extra time, but keep in mind, that you will be able to have fun with a working product much longer.</p>
+          <img src="img/guides/guide5/main3.jpg" alt="" class="large-img">
+    </div>
+
+    <div class="step">
+      <h4>Step 4</h4>
+        <p>Start by drawing down the desired pattern of the wooden joint and mark the peaces, you want to saw off. Have a look at the pictures to get some ideas how your pattern of a wooden joint could look like. Take a thin saw to saw out the individual parts. It is very imortant to work as precise as possible becouse rough mistakes will be noticable afterwards (smaller gaps can be filled with a mix of wood dust and wood glue).<br>When you have sawed and carved out the pattern of both sides stick them together to check, where you have to make some more adjustments.<br>As soon as you are satisfied glue and clamp it together for a few hours to dry out.<br>Now mix some wood dust with wood glue and fill every tiny gap of your wooden joint.<br>Give it agian a few hours to dry out, before you sand it finally completely down until you got a nice flat surface.</p>
+          <img src="img/guides/guide5/main4.jpg" alt="" class="large-img">
+    </div>
+
+    <div class="step">
+      <h4>Step 5</h4>
+        <p>As soon as I know a project is going to work out satisfying in function and design, I like to put my logo on it.<br>It will give your projects your own visual seal of quality.<br>I did this in a pretty simple way:<br>I printed my logo on the sticky side of a simple post-it. Than I used a scalpel to cut out the parts I wanted to be colored, and then painted it with some codes of matt black spray paint.<br>When you have a logo, which is small like it is in this project, it is very important to have really thin layers of Spray paint. If a layer is too thick, the moisture will accumalte and soak the thin paper template, which resolves in unclean and blurred results.<br>Try to have very thin colour layers and a few minutes for the surface to dry, before continuing with the next code of Paint.</p>
+          <img src="img/guides/guide5/main5.jpg" alt="" class="large-img">
+    </div>
+
+    <div class="step">
+      <h4>Step 6</h4>
+        <p>Filnally it`s time for finishing.<br>Wood oil will reveal the natural wooden pattern, give the wood an natural resin smell and will seal it.<br>I used common furniture oil, which you can get pretty inexpensive on amazon.<br>QUICK GUIDE:<br>1. Make sure everything is sanded down perfectly. Every srcratch, tiny holes or any other mistakes will be more noticeable after oiling. So a fine sanding is necessary to get a descent result.<br>2. Use a towel to cover every part of the wood with a thick layer of wood oil.<br>3. Give the wood some time to soak the oil (10-15 minutes).<br>4. Then take the towel and whipe it dry, that their is no remaining oil moisture on the surface.<br>5. Give the wood 24 hours to completely dry out, before you bring it into service.</p>
+          <img src="img/guides/guide5/main6.jpg" alt="" class="large-img">
+    </div>
+
+    <div class="step">
+      <h4>Step 7</h4>
+        <p>Cut out a peace of the aluminum plate, lay it down in place and mark, where you wont the screws to be. Than predrill the screw holes on the plate, to allow the screws to sink in as deep as possible.<br>The aluminium plate will function as a cooling surface for the USB Hub. If you got some at home, you could add some thermal paste in between. You are finished!</p>
+          <img src="img/guides/guide5/main7.jpg" alt="" class="large-img">
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="clearfix"><div class="footer-center"><div class="footer-center-2">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="create.html">Create</a></li>
+        <li><a onclick="displayLogin()">Login/Register</a></li>
+      </ul>
+      <ul>
+        <li><a href="acknowledgements.html">Acknowledgements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ's</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul></div>
+      <form class="footer-list-3">
+        <p>Join Our Newsletter</p>
+          <nobr><input type="email" id="emailSub">
+            <input type="submit" value="Submit" id="submitEmail"></nobr>
+      </form></div>
+      <div class="footer-bottom">
+        <p>Copyright (c) 2016 DIYmatic All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+  </script>
+</body>
+</html>
