@@ -55,4 +55,11 @@ $(document).ready(function() {
     $('#addStep').before('<h5>Step Instructions</h5><textarea class="text-step" id="steptext' + stepCounter + '"></textarea><h5>Step Picture</h5><input type="file" class="file-step" id="pictext1">');
     stepCounter++;
   });
+
+    $(".materials a").click(function() {
+      var selected = $(this).html();
+        var link1 = "https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=" + selected;
+        console.log(selected);
+          window.open(link1, '_blank');
+    });
 });
