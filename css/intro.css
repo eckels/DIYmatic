@@ -4,6 +4,10 @@
   line-height: 230px;
   text-align: center;
 }
+b {
+  margin-left: 5px;
+  padding-right: 5px;
+}
 .cd-title h1 {
   font-size: 100%;
   font-weight: normal;
