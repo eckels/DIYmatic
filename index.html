@@ -31,6 +31,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/login.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -108,12 +109,28 @@
     </section>
   </div>
 
-  <div class="about-div">
-    <h2>Build, Share, Explore.</h2>
-      <p>DIYmatic is the perfect place to share and find guides and inspiration for your own DIY projects. Explore other people's guides for inspiration on your next DIY project. Have your own awesome project? Publish your own guide and share your DIY Guide with everyone.</p>
+  <div class="about-div clearfix">
+    <div class="about-section">
+      <h2>Build</h2>
+        <img class="about-icon" alt="Build" src="img/pencil.png">
+          <p>Create amazing projects from our extensive collection of guides with step by step walk throughs and even shopping links to make sure you spend more time doing, and less time shopping.</p>
+            <a href="#featured" class="smoothScroll"><button>Build Now</button></a>
+    </div>
+    <div class="about-section">
+      <h2>Share</h2>
+        <img class="about-icon" alt="Share" src="img/paper.png">
+          <p>Make something you would like to share? Publish your guide for everyone to see. Our Guide creation page will allow you to build your guide with ease.</p>
+            <a href="create.html"><button class="extra-margin">Share Now</button></a>
+    </div>
+    <div class="about-section">
+      <h2>Explore</h2>
+        <img class="about-icon" alt="Explore" src="img/globe.png">
+          <p>Explore guides from all over the world from our vast collection of user submitted guides. We guarantee you will find something new and unique for you to build.</p>
+            <a href="explore.html"><button class="extra-margin">Explore Now</button></a>
+    </div>
   </div>
 
-  <div class="guide-div">
+  <div class="guide-div" id="featured">
     <h1>Featured Guides</h1>
       <p class="guide-desc">The best guides just for you</p>
     <div class="guide-grid">
