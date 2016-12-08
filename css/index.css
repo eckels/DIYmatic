@@ -31,7 +31,7 @@
   background-color: white;
   border-radius: 10px;
   display: inline-block;
-  padding: 5px;
+  padding: 2px;
 }
 
 .newsletter-div input {
@@ -52,6 +52,7 @@
   color: white;
   padding: 10px 15px 10px 15px;
   cursor: pointer;
+  outline: none;
 }
 
 .about-div {
@@ -59,23 +60,101 @@
   text-align: center;
   background-color: #2196F3;
   border-bottom: solid #324376 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-section {
+  float: left;
+  width: 350px;
+  display: inline-block;
+  margin: 1%;
 }
 
 .about-div h2 {
   color: white;
-  font-size: 220%;
+  font-size: 200%;
   margin: 10px;
   margin-bottom: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
+.about-div img {
+  width: 200px;
+  height: auto;
+}
+
 .about-div p {
   color: white;
-  width: 80%;
-  margin: auto 10% auto 10%;
+  margin: auto 4% auto 4%;
   line-height: 180%;
+  font-size: 110%;
+}
+
+.about-div button {
+  color: white;
+  background-color: #324376;
   font-size: 120%;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-bottom: solid #232d4c 3px;
+  transition: font-size .3s;
+}
+
+.about-div .extra-margin {
+  margin-top: 50px;
+}
+
+.about-div .extra-margin:hover {
+  font-size: 125%;
+  margin-top: 49px;
+}
+
+.about-div button:hover {
+  font-size: 125%;
+  margin-top: 19px;
+}
+
+@media (max-width: 1034px) {
+  .about-div .extra-margin {
+    margin-top: 20px;
+  }
+  .about-div .extra-margin:hover {
+    margin-top: 19px;
+  }
+}
+
+@media (max-width: 800px) {
+.about-div {
+  display: block;
+  padding-bottom: 0;
+}
+.about-section {
+  width: 80%;
+  display: block;
+  float: none;
+  margin: 0 7% 70px 7%;
+  border: solid white 4px;
+  padding: 2%;
+  border-radius: 6px;
+}
+.about-div h2 {
+  font-size: 180%;
+}
+.about-div img {
+  width: 190px;
+}
+.about-div p {
+  font-size: 100%;
+}
+.about-div button {
+  margin-bottom: 10px;
+}
 }
 
 @media (max-width: 886px) {
@@ -90,40 +169,28 @@
     height: 33vh;
     padding-top: 8em;
   }
-.newsletter-div h3 {
-  font-size: 160%;
-}
-.newsletter-div p {
-  font-size: 95%;
-}
-.newsletter-form {
-  padding: 3px;
-}
-.newsletter-form input {
-  font-size: 95%;
-  width: auto;
-}
-.newsletter-form button {
-  font-size: 95%;
-  padding: 8px 10px 8px 10px;
-}
+  .newsletter-div h3 {
+    font-size: 160%;
+  }
+  .newsletter-div p {
+    font-size: 95%;
+  }
+  .newsletter-form {
+    padding: 2px;
+  }
+  .newsletter-form input {
+    font-size: 95%;
+    width: auto;
+  }
+  .newsletter-form button {
+    font-size: 95%;
+    padding: 8px 10px 8px 10px;
+  }
 }
 
 @media (max-width: 440px) {
   .intro-screen {
     height: 30vh;
     padding-top: 6em;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-div {
-    padding: 15px;
-  }
-  .about-div h2 {
-    font-size: 180%;
-  }
-  .about-div p {
-    font-size: 100%;
   }
 }
