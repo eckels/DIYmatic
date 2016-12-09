@@ -67,6 +67,23 @@ body {
   margin-top: 3px;
 }
 
+#materialbutton {
+  transition: background-color .2s;
+}
+
+#materialbutton:hover {
+  background-color: #324376;
+  color: white;
+}
+
+.submit {
+  transition: background-color .3s;
+}
+
+.submit:hover {
+  background-color: #ff7b00 !important;
+}
+
 .text-step {
   width: 80%;
   font-size: 100%;
@@ -75,8 +92,10 @@ body {
   border-radius: 4px;
   resize: none;
   padding: 6px;
+  border: solid #757575 1px;
   height: 100px;
   margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .file-step {
