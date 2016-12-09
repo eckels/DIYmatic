@@ -52,7 +52,7 @@ $(document).ready(function() {
   });
 
   $('#addStep').click(function() {
-    $('#addStep').before('<h5>Step Instructions</h5><textarea class="text-step" id="steptext' + stepCounter + '"></textarea><h5>Step Picture</h5><input type="file" class="file-step" id="pictext1">');
+    $('#addStep').before('<h5>Step ' + stepCounter + ' Instructions</h5><textarea class="text-step" id="steptext' + stepCounter + '"></textarea><h5>Step Picture</h5><input type="file" class="file-step" id="pictext1">');
     stepCounter++;
   });
 
