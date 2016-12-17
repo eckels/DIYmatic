@@ -2,7 +2,7 @@
   margin: 0;
   width: 100%;
   height: 40vh;
-  background-image: url("https://eckels.github.io/DIYmatic/img/background.jpg");
+  background: url("https://eckels.github.io/DIYmatic/img/background.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 8em;
