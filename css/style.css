@@ -542,6 +542,13 @@ footer ul {
   padding: 50px;
 }
 
+.general li, .general p {
+  font-size: 110%;
+}
+.general p {
+  line-height: 180%;
+}
+
 @media (max-width: 550px) {
   .general {
     padding: 20px;
