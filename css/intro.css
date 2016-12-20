@@ -7,10 +7,12 @@
 i {
   font-style: normal;
   font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
 }
 b {
   margin-left: 5px;
   padding-right: 2px;
+  font-family: 'Open Sans', sans-serif;
 }
 .cd-title h1 {
   font-size: 100%;
@@ -20,6 +22,7 @@ b {
 @media only screen and (min-width: 768px) {
   .cd-title {
     line-height: 250px;
+    font-family: 'Open Sans', sans-serif;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -27,9 +30,11 @@ b {
     height: 200px;
     line-height: 300px;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
   }
   .cd-title h1 {
     font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
   }
 }
 
@@ -213,7 +218,8 @@ b {
 }
 
 span {
-font-weight: bold;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
 }
 .cd-headline.clip .cd-words-wrapper {
   overflow: hidden;
